@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t jbg-udagram-api-user .
+  - docker build -t jbg-udagram-api-user ./project/udagram-api-user/.
   - docker tag jbg-udagram-api-user r31060/jbg-udagram-api-user:latest
 
 after_success:
